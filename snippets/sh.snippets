@@ -104,3 +104,9 @@ snippet fun
 	function ${1:function_name}() {
 		${0:#function_body}
 	}
+snippet usage
+	function ${1:function_name}() {
+		echo $@            
+		echo "Usage: ${0##*/} [--changelog-rev <tree-ish>] [-t|--tag] [-u|--upload <location>] <version>"
+		exit 1
+	}
